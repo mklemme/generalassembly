@@ -1,15 +1,122 @@
-.intro{}
-	.cta--button{}
-	.component--{}
+body{
+	font-family: "Open Sans", arial, sans-serif !important;
+	
+	letter-spacing: 1px;
+}
+section{
+	padding: 100px 0;
+}
+
+
+figure{}
+figcaption{
+	text-align: center;
+	padding: 10px 0;
+	font-size: 11px;
+	font-style: italic;
+	line-height: 16px;
+	}
+	figcaption:before{
+		content: "Caption: ";
+		display: inline-block;
+		margin: 0 5px 0 0;
+		font-style: normal;
+	}
 
 
 
+.intro{
+	
+	background: #ce4c41 url(../img/background-intro.jpg);
+	}
+	.intro figure{
+		background: rgba(231, 110, 101,.5);
+		border: 1px solid rgb(233, 120, 112);
+		padding: 10px;
+		border-radius: 4px;
+		color: white;
+		font-weight: 200;
+		}
 
-
-.bio{}
-
-
-.imageslider{}
-
-
+.bio{
+	padding: 300px 0;
+	background: #1f2021 url(../img/background-bio.png) no-repeat;
+	background-position: 30% 100%;
+	}
+	.bio h2,
+	.bio p{
+		color: white;
+		font-size: 14px;
+		font-weight: 200;
+		}
+	.bio h2{
+		margin: 0 0 20px 0;
+		font-weight: 400;
+		font-size: 24px;
+		color: white;
+		}
+	
+	
+.imageslider{
+	background: #f2f2f2;
+	height: 640px
+	}
+	.imageslider .slideshow{
+		position: relative;
+		}
+		.imageslider .slideshow img{
+			position: absolute;
+			}
+			.imageslider .slideshow img.active{
+				z-index: 99;
+				}
+	
 .connect{}
+	.connect ul{
+		margin: 0;
+		}
+	.connect li{
+		list-style: none;
+		}
+
+/*
+ * Modular Component: Feature w/blurb
+ * 
+ * 
+ */
+.component--feature-blurb{
+	padding: 100px 0;
+}
+	.component--feature-blurb-header{
+		color: white;
+		font-size: 24px;
+		margin: 10px 0;
+		
+		}
+	.component--feature-blurb-tagline{
+		text-transform: uppercase;
+		color: white;
+		font-weight: 200;
+		font-size: 12px;
+		margin: 0;
+		}
+	.component--feature-blurb-description{
+		margin: 0 0 20px 0;
+		font-weight: 200;
+		font-size: 14px;
+		color: white;
+		}
+
+	.cta--button{
+		background: #2a2929;
+		color: white;
+		font-size: 10px;
+		border-radius: 4px;
+		padding: 15px 40px;
+		display: inline-block;
+		transition: all .2s linear;
+		}
+		.cta--button:hover{
+			background: white;
+			color: #2a2929;
+			}

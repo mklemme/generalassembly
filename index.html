@@ -10,55 +10,82 @@
   <body>
     <section class="intro">
     	<div class="row">
-    		<div class="large-8 columns component--">
-    			<p class=""><pre><a class="cta--button"></a></pre> Part Designer / Part Developer</p>
-    			<h1 class=""><pre><a class="cta--button"></a></pre> I build Beautiful and Modular Code</h1>
-    			<p><pre><a class="cta--button"></a></pre> A whole something</p>
-    			<a href="cta--button"><pre><a class="cta--button"></a></pre> Learn more</a>
+    		<div class="large-6 columns component--feature-blurb">
+    			<p class="component--feature-blurb-tagline">Part Designer / Part Developer</p>
+    			<h1 class="component--feature-blurb-header">I translate geek speak to business speak</h1>
+    			<p class="component--feature-blurb-description">A whole lot of text. For example: Sprk.fitness is just one of many apps that we’ve launched. Our goal is to make your life easier by providing powerful tools that you can use to improve your life. Learn something new. Become healthier, it’s free!</p>
+    			<a class="cta--button">Learn what that means</a>
     		</div>
-    		<div class="large-4 columns">
+    		<div class="large-6 columns">
     			<figure>
-    				<img />
-    				<figcaption>Le sigh</figcaption>
+    				<img src="http://scontent-b-pao.cdninstagram.com/hphotos-xap1/t51.2885-15/10525518_1507575639457299_245830701_n.jpg"/>
+    				<figcaption>Finished a conference at Google's campus in San Francisco. Beautiful view of the bridge. Perfect moment for a cheesey selfie :)</figcaption>
     			</figure>
     		</div>
     	</div>
     </section>
     <section class="bio">
     	<div class="row">
-    		<div class="large-6 large-offset-by-4 columns">
+    		<div class="large-6 large-offset-6 columns">
     			<h2>I translate geek speak to business speak</h2>
-    			<p>Something here</p>
+    			<p>A whole lot of text. For example: Sprk.fitness is just one of many apps that we’ve launched. Our goal is to make your life easier by providing powerful tools that you can use to improve your life. Learn something new. Become healthier, it’s free!</p>
+    			<p>A whole lot of text. For example: Sprk.fitness is just one of many apps that we’ve launched. Our goal is to make your life easier by providing powerful tools that you can use to improve your life. Learn something new. Become healthier, it’s free!</p>
     		</div>
     	</div>
     </section>
     <section class="imageslider">
     	<div class="row">
-    		<div class="large-6 large-offset-by-4 columns">
-    			<h2>I translate geek speak to business speak</h2>
-    			<p>Something here</p>
+    		<div class="large-6 large-centered columns">
+    			<div class="slideshow">
+				    <img src="http://photos-g.ak.instagram.com/hphotos-ak-xpf1/1741901_439631342833910_2034865926_n.jpg" class="active"/>
+				    <img src="http://distilleryimage1.ak.instagram.com/c49e9af4abd111e3b7ca127586b441f9_8.jpg"	/>
+				    <img src="http://scontent-a-pao.cdninstagram.com/hphotos-xap1/t51.2885-15/10499214_270667499792257_965920704_n.jpg"/>
+				    <img src=""/>
+				    <img src=""/>
+				    <img src=""/>
+				    <img src=""/>			    
+				</div>
     		</div>
     	</div>
     </section>
-    <footer class="bio">
+    <section class="connect">
     	<div class="row">
     		<div class="large-6 columns">
     			<figure>
-    				<img />
-    				<figcaption>Le sigh</figcaption>
+    				<img src="http://photos-g.ak.instagram.com/hphotos-ak-xpf1/1741901_439631342833910_2034865926_n.jpg"/>
+    				<figcaption>Cheesing it for the camera</figcaption>
     			</figure>
     		</div>
     		<div class="large-6 columns">
     			<p>Connect</p>
     			<ul>
-    				<li>Facebook</li>
-    				<li>Twitter</li>
-    				<li>Linkedin</li>
-    				<li>Github</li>
-    				<li>Instagram</li>
+    				<li><a href="">Facebook</a></li>
+    				<li><a href="">Twitter</a></li>
+    				<li><a href="">Linkedin</a></li>
+    				<li><a href="">Github</a></li>
+    				<li><a href="">Instagram</a></li>
+    				<li><a href="tel:+5103040990">Phone: 510.304.0990</a></li>
     			</ul>
     		</div>
     	</div>
     </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    // FUUUUUUCK!! Need to figure out how to get the slider to reset and add .active to the first element after it's been removed from the last
+    function slideSwitch() {
+        var $active = $('.slideshow img.active');
+        var $next = $active.next();    
+
+        $next.addClass('active');
+
+        $active.removeClass('active');
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });
+   
+    $('.slideshow').click(slideSwitch);
+</script>
   </body>
 </html>
